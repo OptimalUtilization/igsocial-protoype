@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		275BAB981FD24CED005D7BEA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 275BAB971FD24CED005D7BEA /* GoogleService-Info.plist */; };
+		277B42191FD247880044212F /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277B42181FD247880044212F /* AuthProvider.swift */; };
 		277EF53E1FD24317006AAE6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277EF53D1FD24317006AAE6B /* AppDelegate.swift */; };
 		277EF5401FD24317006AAE6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277EF53F1FD24317006AAE6B /* ViewController.swift */; };
 		277EF5431FD24317006AAE6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277EF5411FD24317006AAE6B /* Main.storyboard */; };
@@ -14,6 +16,11 @@
 		277EF5481FD24317006AAE6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277EF5461FD24317006AAE6B /* LaunchScreen.storyboard */; };
 		277EF5531FD24317006AAE6B /* myindiefilmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277EF5521FD24317006AAE6B /* myindiefilmsTests.swift */; };
 		277EF55E1FD24317006AAE6B /* myindiefilmsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277EF55D1FD24317006AAE6B /* myindiefilmsUITests.swift */; };
+		279B31451FD258AB00163B3E /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B31441FD258AB00163B3E /* Profile.swift */; };
+		27CDA20D1FD2537600DEA42B /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CDA20C1FD2537600DEA42B /* MainTab.swift */; };
+		421947F2B3F41915B74694C5 /* Pods_myindiefilms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54AAC885945E05B073158F49 /* Pods_myindiefilms.framework */; };
+		6051B3967343C88168DACA61 /* Pods_myindiefilmsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E97C6AAAC5D370B4F631F3 /* Pods_myindiefilmsTests.framework */; };
+		64B1AA6FF84F4119BB27EF98 /* Pods_myindiefilmsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECA56E89303FF456425EB9D /* Pods_myindiefilmsUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		275BAB971FD24CED005D7BEA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		277B42181FD247880044212F /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
 		277EF53A1FD24317006AAE6B /* myindiefilms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myindiefilms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277EF53D1FD24317006AAE6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		277EF53F1FD24317006AAE6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +56,17 @@
 		277EF5591FD24317006AAE6B /* myindiefilmsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myindiefilmsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		277EF55D1FD24317006AAE6B /* myindiefilmsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myindiefilmsUITests.swift; sourceTree = "<group>"; };
 		277EF55F1FD24317006AAE6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		279B31441FD258AB00163B3E /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		27CDA20C1FD2537600DEA42B /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
+		3801E4B1CEE6177596CFA85E /* Pods-myindiefilms.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myindiefilms.release.xcconfig"; path = "Pods/Target Support Files/Pods-myindiefilms/Pods-myindiefilms.release.xcconfig"; sourceTree = "<group>"; };
+		52E97C6AAAC5D370B4F631F3 /* Pods_myindiefilmsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myindiefilmsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54AAC885945E05B073158F49 /* Pods_myindiefilms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myindiefilms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65C004F55FEDA4BB559D9B52 /* Pods-myindiefilmsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myindiefilmsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-myindiefilmsUITests/Pods-myindiefilmsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9F031B89671CAAD5F4CE653C /* Pods-myindiefilmsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myindiefilmsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myindiefilmsUITests/Pods-myindiefilmsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AECA56E89303FF456425EB9D /* Pods_myindiefilmsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myindiefilmsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC940EAFED3829E6E8603174 /* Pods-myindiefilmsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myindiefilmsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myindiefilmsTests/Pods-myindiefilmsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB4E4E9C94B113C5E7BD8837 /* Pods-myindiefilmsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myindiefilmsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-myindiefilmsTests/Pods-myindiefilmsTests.release.xcconfig"; sourceTree = "<group>"; };
+		FBEF51109C6653DFD2DD8B00 /* Pods-myindiefilms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myindiefilms.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myindiefilms/Pods-myindiefilms.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421947F2B3F41915B74694C5 /* Pods_myindiefilms.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6051B3967343C88168DACA61 /* Pods_myindiefilmsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64B1AA6FF84F4119BB27EF98 /* Pods_myindiefilmsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +104,8 @@
 				277EF5511FD24317006AAE6B /* myindiefilmsTests */,
 				277EF55C1FD24317006AAE6B /* myindiefilmsUITests */,
 				277EF53B1FD24317006AAE6B /* Products */,
+				4C1AA5B378C4BBD8BD50356F /* Pods */,
+				DFE6A077AACCD036809C0B8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +123,15 @@
 			isa = PBXGroup;
 			children = (
 				277EF53D1FD24317006AAE6B /* AppDelegate.swift */,
+				277B42181FD247880044212F /* AuthProvider.swift */,
 				277EF53F1FD24317006AAE6B /* ViewController.swift */,
 				277EF5411FD24317006AAE6B /* Main.storyboard */,
+				279B31441FD258AB00163B3E /* Profile.swift */,
+				27CDA20C1FD2537600DEA42B /* MainTab.swift */,
 				277EF5441FD24317006AAE6B /* Assets.xcassets */,
 				277EF5461FD24317006AAE6B /* LaunchScreen.storyboard */,
 				277EF5491FD24317006AAE6B /* Info.plist */,
+				275BAB971FD24CED005D7BEA /* GoogleService-Info.plist */,
 			);
 			path = myindiefilms;
 			sourceTree = "<group>";
@@ -125,6 +154,29 @@
 			path = myindiefilmsUITests;
 			sourceTree = "<group>";
 		};
+		4C1AA5B378C4BBD8BD50356F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBEF51109C6653DFD2DD8B00 /* Pods-myindiefilms.debug.xcconfig */,
+				3801E4B1CEE6177596CFA85E /* Pods-myindiefilms.release.xcconfig */,
+				CC940EAFED3829E6E8603174 /* Pods-myindiefilmsTests.debug.xcconfig */,
+				DB4E4E9C94B113C5E7BD8837 /* Pods-myindiefilmsTests.release.xcconfig */,
+				9F031B89671CAAD5F4CE653C /* Pods-myindiefilmsUITests.debug.xcconfig */,
+				65C004F55FEDA4BB559D9B52 /* Pods-myindiefilmsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DFE6A077AACCD036809C0B8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54AAC885945E05B073158F49 /* Pods_myindiefilms.framework */,
+				52E97C6AAAC5D370B4F631F3 /* Pods_myindiefilmsTests.framework */,
+				AECA56E89303FF456425EB9D /* Pods_myindiefilmsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 277EF5621FD24317006AAE6B /* Build configuration list for PBXNativeTarget "myindiefilms" */;
 			buildPhases = (
+				5A78CE64D42598C1F9DD28EA /* [CP] Check Pods Manifest.lock */,
 				277EF5361FD24317006AAE6B /* Sources */,
 				277EF5371FD24317006AAE6B /* Frameworks */,
 				277EF5381FD24317006AAE6B /* Resources */,
+				066ECD5CD2C5E8FC11818E7F /* [CP] Embed Pods Frameworks */,
+				6352A83E739F4FB574A7D5B9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 277EF5651FD24317006AAE6B /* Build configuration list for PBXNativeTarget "myindiefilmsTests" */;
 			buildPhases = (
+				8C3DCE92C9646DDEACF101DA /* [CP] Check Pods Manifest.lock */,
 				277EF54A1FD24317006AAE6B /* Sources */,
 				277EF54B1FD24317006AAE6B /* Frameworks */,
 				277EF54C1FD24317006AAE6B /* Resources */,
+				99AB2BB78AFFC4AF0FC1F678 /* [CP] Embed Pods Frameworks */,
+				122324C962B10CBB794CBDA4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 277EF5681FD24317006AAE6B /* Build configuration list for PBXNativeTarget "myindiefilmsUITests" */;
 			buildPhases = (
+				2CADA8E5991AD0CA4A9044DD /* [CP] Check Pods Manifest.lock */,
 				277EF5551FD24317006AAE6B /* Sources */,
 				277EF5561FD24317006AAE6B /* Frameworks */,
 				277EF5571FD24317006AAE6B /* Resources */,
+				DE0225764064FFA4C9DDB544 /* [CP] Embed Pods Frameworks */,
+				92E5F1E83B2B11CA3476C259 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				277EF5481FD24317006AAE6B /* LaunchScreen.storyboard in Resources */,
+				275BAB981FD24CED005D7BEA /* GoogleService-Info.plist in Resources */,
 				277EF5451FD24317006AAE6B /* Assets.xcassets in Resources */,
 				277EF5431FD24317006AAE6B /* Main.storyboard in Resources */,
 			);
@@ -254,11 +316,187 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		066ECD5CD2C5E8FC11818E7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-myindiefilms/Pods-myindiefilms-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myindiefilms/Pods-myindiefilms-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		122324C962B10CBB794CBDA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myindiefilmsTests/Pods-myindiefilmsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CADA8E5991AD0CA4A9044DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-myindiefilmsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A78CE64D42598C1F9DD28EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-myindiefilms-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6352A83E739F4FB574A7D5B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-myindiefilms/Pods-myindiefilms-resources.sh",
+				"${PODS_ROOT}/FirebaseInvites/Resources/GINInviteResources.bundle",
+				"${PODS_ROOT}/FirebaseInvites/Resources/GPPACLPickerResources.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myindiefilms/Pods-myindiefilms-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C3DCE92C9646DDEACF101DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-myindiefilmsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92E5F1E83B2B11CA3476C259 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myindiefilmsUITests/Pods-myindiefilmsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99AB2BB78AFFC4AF0FC1F678 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myindiefilmsTests/Pods-myindiefilmsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE0225764064FFA4C9DDB544 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myindiefilmsUITests/Pods-myindiefilmsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		277EF5361FD24317006AAE6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27CDA20D1FD2537600DEA42B /* MainTab.swift in Sources */,
+				279B31451FD258AB00163B3E /* Profile.swift in Sources */,
+				277B42191FD247880044212F /* AuthProvider.swift in Sources */,
 				277EF5401FD24317006AAE6B /* ViewController.swift in Sources */,
 				277EF53E1FD24317006AAE6B /* AppDelegate.swift in Sources */,
 			);
@@ -424,6 +662,7 @@
 		};
 		277EF5631FD24317006AAE6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBEF51109C6653DFD2DD8B00 /* Pods-myindiefilms.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +678,7 @@
 		};
 		277EF5641FD24317006AAE6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3801E4B1CEE6177596CFA85E /* Pods-myindiefilms.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +694,7 @@
 		};
 		277EF5661FD24317006AAE6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC940EAFED3829E6E8603174 /* Pods-myindiefilmsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +712,7 @@
 		};
 		277EF5671FD24317006AAE6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB4E4E9C94B113C5E7BD8837 /* Pods-myindiefilmsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +730,7 @@
 		};
 		277EF5691FD24317006AAE6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F031B89671CAAD5F4CE653C /* Pods-myindiefilmsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +747,7 @@
 		};
 		277EF56A1FD24317006AAE6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65C004F55FEDA4BB559D9B52 /* Pods-myindiefilmsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
