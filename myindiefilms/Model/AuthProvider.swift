@@ -8,6 +8,7 @@
 
 import Foundation
 import FirebaseAuth
+import FirebaseDatabase
 
 typealias LoginHandler = (_ msg: String?) -> Void;
 
@@ -18,6 +19,7 @@ struct LoginErrorCode {
     static let USER_NOT_FOUND = "User Not Found, Please Register";
     static let EMAIL_ALREADY_IN_USE = "Email Already In Use, Please Use Another Email";
     static let WEAK_PASSWORD = "Password Should Be At Least 6 Characters Long";
+    static let USERNAME_ALREADY_USED = "Username is already in Use";
 }
 
 class AuthProvider {
@@ -40,12 +42,13 @@ class AuthProvider {
             }
             
         }
-        
+ 
     };
     
     // login func
     
-    func signUp(withEmail: String, password: String, loginHandler:LoginHandler?) {
+    
+    func signUp(withEmail: String, username: String, password: String, loginHandler:LoginHandler?) {
         
         Auth.auth().createUser(withEmail: withEmail, password: password) { (user, error) in
             
@@ -53,17 +56,24 @@ class AuthProvider {
                 self.handleErrors(err: error! as NSError, loginHandler: loginHandler);
                 
             } else {
+                
                 if (user?.uid) != nil {
                     
                     //store the user to database
                     //log in the user
                     
+                    
                     self.login(withEmail: withEmail, password: password, LoginHandler: loginHandler);
+                    
+                    
                 }
+    
             }
         }
         
     };
+    
+    
     func logOut() -> Bool {
         if (Auth.auth().currentUser != nil) {
             do {
@@ -76,6 +86,9 @@ class AuthProvider {
         
         return true;
 }
+    
+    
+    
     private func handleErrors(err: NSError, loginHandler: LoginHandler?){
         
         if let errCode = AuthErrorCode(rawValue: err.code ){
@@ -102,6 +115,10 @@ class AuthProvider {
                 loginHandler?(LoginErrorCode.WEAK_PASSWORD);
                 break;
                 
+            case .accountExistsWithDifferentCredential:
+                loginHandler?(LoginErrorCode.USERNAME_ALREADY_USED);
+                break;
+            
             default:
                 loginHandler?(LoginErrorCode.PROBLEM_CONNECTING);
                 break;

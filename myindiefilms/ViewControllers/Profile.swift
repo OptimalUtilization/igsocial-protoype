@@ -17,6 +17,7 @@ class Profile: UIViewController {
     }
     
    
+    
     @IBAction func logouttapped(_ sender: Any) {
     
         if AuthProvider.Instance.logOut() {
