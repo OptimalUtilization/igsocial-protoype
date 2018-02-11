@@ -10,6 +10,7 @@ import UIKit
 
 class User: NSObject {
     
+    var toID: String?
     var name: String?
     var email: String?
     var profileImageURL: String?

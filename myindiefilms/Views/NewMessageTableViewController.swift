@@ -105,9 +105,11 @@ class NewMessageTableViewController: UITableViewController {
             for child in snapshot.children.allObjects as! [DataSnapshot] {
                 if let value = child.value as? NSDictionary {
                     let user = User()
+                    let toIDD = child.key
                     let name = value["username"] as? String ?? "Name not found"
                     let email = value["email"] as? String ?? "Email not found"
                     let profileIMG = value["profileImageURL"] as? String ?? "Not found"
+                    user.toID = toIDD
                     user.profileImageURL = profileIMG
                     user.name = name
                     user.email = email
@@ -171,8 +173,8 @@ class NewMessageTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         dismiss(animated: true) {
-            
-            self.inboxcontroller?.showChatController()
+            let user = self.users[indexPath.row]
+            self.inboxcontroller?.showChatControlleruser(user: user)
             
 
         

@@ -11,7 +11,12 @@ import Firebase
 
 class ChatController: UICollectionViewController, UITextFieldDelegate {
    
-
+    
+    var user: User? {
+        didSet{
+            navigationItem.title = user?.name
+        }
+    }
     
     lazy var inputTextField: UITextField = {
         let textField = UITextField()
@@ -26,7 +31,7 @@ class ChatController: UICollectionViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "Chat Log"
+     
         
         
         collectionView?.backgroundColor = UIColor.white
@@ -44,7 +49,7 @@ class ChatController: UICollectionViewController, UITextFieldDelegate {
         containerView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         containerView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        containerView.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        containerView.heightAnchor.constraint(equalToConstant: 200).isActive = true
         
         
         let sendButton = UIButton(type: .system)
@@ -84,8 +89,30 @@ class ChatController: UICollectionViewController, UITextFieldDelegate {
         
         let ref = Database.database().reference().child("messages")
         let childRef = ref.childByAutoId()
-        let values = ["text": inputTextField.text!]
-        childRef.updateChildValues(values)
+        let toID = user!.toID!
+        let timestamp = Int(NSDate().timeIntervalSince1970)
+        let fromID = Auth.auth().currentUser!.uid
+        let values = ["text": inputTextField.text!, "toID": toID, "fromID": fromID, "timestamp": timestamp] as [String : Any]
+//        childRef.updateChildValues(values)
+        
+        childRef.updateChildValues(values) { (error, ref) in
+            if error != nil {
+                print(error)
+                return
+            }
+            
+            let userMessagesRef = Database.database().reference().child("user-messages").child(fromID)
+            
+            let messageID = childRef.key
+            userMessagesRef.updateChildValues([messageID: 1])
+            
+            let recipientUserMessageRef = Database.database().reference().child("user-messages").child(toID)
+            recipientUserMessageRef.updateChildValues([messageID: 1])
+        }
+        
+        
+        
+        // need to include a cancel for nil user: set alert : Choose a user
         
     }
     

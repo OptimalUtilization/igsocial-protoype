@@ -27,7 +27,7 @@ class FeedTableViewController: UITableViewController {
    func checkifuserisloggedin(){
     if Auth.auth().currentUser?.uid == nil{
     handlelogout()
-   
+
     }
     }
     
