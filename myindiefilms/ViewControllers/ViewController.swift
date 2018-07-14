@@ -55,18 +55,19 @@ class ViewController: UIViewController {
     }
     }
     
+    //major error can login with any user without credentials when click login
+    
     func checkifuserisloggedin(){
-        if Auth.auth().currentUser?.uid == nil{
+        guard let uid = Auth.auth().currentUser?.uid else {
             handlelogout()
-        }else{
-            let uid = Auth.auth().currentUser?.uid
-            Database.database().reference().child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
+            return
+        }
+            Database.database().reference().child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
                 if let dictionary = snapshot.value as? [String: AnyObject]{
                     self.navigationItem.title = dictionary["username"] as? String
                 }
             }, withCancel: nil)
         }
-    }
     
     
     func handlelogout() {

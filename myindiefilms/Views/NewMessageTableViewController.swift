@@ -17,18 +17,19 @@ class NewMessageTableViewController: UITableViewController {
     var ref: DatabaseReference!
     var rootRef: UInt!
     var users = [User]()
-
+    lazy var searchBar: UISearchBar = UISearchBar()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        setupSearch()
         
-       
         
         tableView.register(UserCell.self, forCellReuseIdentifier: cellidd)
 
         
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Messages", style: .plain, target: self, action: #selector(showchatcontroller))
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Messages", style: .plain, target: self, action: #selector(showchatcontroller))
        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(handleCancel))
         
         ref = Database.database().reference()
@@ -37,6 +38,24 @@ class NewMessageTableViewController: UITableViewController {
         self.setupnavbar()
     
     }
+    
+//    func setupSearch(){
+//      let searchController = UISearchController(searchResultsController: nil)
+//        navigationItem.searchController = searchController
+//        navigationItem.hidesSearchBarWhenScrolling = false
+//
+//    }
+    
+//    func searchBar(searchBar: UISearchBar, textDidChange textSearched: String)
+//    {
+//        let strSearch = "vi"
+//        Database.database().reference().child("users").queryOrdered(byChild: "username").queryStarting(atValue: strSearch).queryEnding(atValue: strSearch + "\u{f8ff}").observeSingleEvent(of: .value, with: { (snapshot) in
+//
+//
+//            print(snapshot)
+//
+//        })
+//    }
     
     
     func setupnavbar() {
@@ -140,21 +159,8 @@ class NewMessageTableViewController: UITableViewController {
             
             cell.profileimageview.loadImagesUsingCachewithURL(urlString: profileIMG)
             
-//            let url = URL(string: profileIMG)
-//            URLSession.shared.dataTask(with: url!,
-//                                       completionHandler:
-//                {(data, response, error) in
-//
-//                    //download hit error
-//                    if error != nil {
-//                        print(error!)
-//                        return
-//                    }
-//
-//                    DispatchQueue.main.async() {
-//                        cell.profileimageview.image = UIImage(data: data!)
-//                    }
-//            }).resume()
+           
+            
         }
         return cell
         

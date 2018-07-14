@@ -13,6 +13,8 @@ import FirebaseStorage
 
 class SignUpViewController: UIViewController {
 
+    var inboxTableViewController: InboxTableViewController?
+    
     private let MAIN_SEGUE = "MainTab";
     
     @IBOutlet weak var seguebutton: UIButton!
@@ -68,7 +70,7 @@ class SignUpViewController: UIViewController {
     @IBAction func signuptapped(_ sender: Any) {
         
         
-        
+        //ERRor in line below
         if emailtextfield.text != "" && passwordtextfield.text != "" && usernametextfield.text != ""{
             
             AuthProvider.Instance.signUp(withEmail: emailtextfield.text!, username: usernametextfield.text!, password: passwordtextfield.text!, loginHandler: {(message) in
@@ -79,6 +81,8 @@ class SignUpViewController: UIViewController {
                     return
                 }
                     
+//               let uid = Database.database().reference().child("users").childByAutoId()
+                
                 guard let uid = Auth.auth().currentUser?.uid else{
                     return
                 }
@@ -99,7 +103,7 @@ class SignUpViewController: UIViewController {
                         }
                         
                         if let profileImageURL = metadata?.downloadURL()?.absoluteString {
-                            let values = ["username": self.usernametextfield.text!, "email": self.emailtextfield.text!, "profileImageURL": profileImageURL]
+                            let values = ["username": self.usernametextfield.text!, "email": self.emailtextfield.text!, "profileImageURL": profileImageURL, "Bio" : "Thank you for viewing my profile!"]
                             self.registeruserindatabase(uid: uid, values: values as [String : AnyObject])
                         }
                 
@@ -113,13 +117,15 @@ class SignUpViewController: UIViewController {
 
 
     private func registeruserindatabase(uid: String, values: [String: AnyObject]){
-    let ref = Database.database().reference(fromURL: "https://myindiefilms-3fc8b.firebaseio.com")
+    let ref = Database.database().reference()
     let usersReference = ref.child("users").child(uid)
         usersReference.updateChildValues(values) { (error, ref) in
         if error != nil{
             print(error!)
         return
         }
+        
+        self.inboxTableViewController?.fetchuserandsetupnavbar()
          self.performSegue(withIdentifier: self.MAIN_SEGUE, sender: nil);
         }
         }
